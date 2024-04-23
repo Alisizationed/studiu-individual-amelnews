@@ -165,7 +165,7 @@ function economicaShow() {
 
 function renewSite() {
     const main = document.querySelector('.main');
-    main.innerHTML = "<div class=\"adds\"><div class=\"add\">Reclama</div></div>";
+    main.innerHTML = "<div class=\"adds\"><div class=\"add\">Реклама</div></div>";
 
     const articles = document.createElement('div');
     articles.classList.add('articles');
