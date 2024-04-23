@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="icon" href="images/ghost.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+        <script src="https://kit.fontawesome.com/f98bd7dbc6.js" crossorigin="anonymous"></script>
+        <title>
+            AmelNews
+        </title>
+    </head>
+    <body>
+        
+        <header>
+            <a id="AmelNews" href="index.html">
+                <i class="fa fa-newspaper" aria-hidden="true"></i>
+                <p>
+                    AmelNews
+                </p>
+            </a>
+            <span class="right">
+                <ul>
+                    <li id="active">RO</li>
+                    <li><a href="ruindex.html">RU</a></li>
+                </ul>
+                <div id="burger">
+                    <i class="fa fa-bars" aria-hidden="true" onclick="burgerShow()"></i>
+                </div>
+            </span>
+        </header>
+        <div class="page-container">
+            <aside>
+                <ul class="option">
+                    <li class="active" id="toate" onclick="toateShow()">
+                        Toate
+                    </li>
+                    <li id="societate" onclick="societateShow()">
+                        Societate
+                    </li>
+                    <li id="lume" onclick="inLumeShow()">
+                        În lume
+                    </li>
+                    <li id="politica" onclick="politicaShow()">
+                        Politica
+                    </li>
+                    <li id="incidente" onclick="incidenteShow()">
+                        Incidente
+                    </li>
+                    <li id="economica" onclick="economicaShow()">
+                        Economică
+                    </li>
+                </ul>
+            </aside>
+            <main>
+                <div class="main padding-top">
+                    <a href="pages/ro/in-lume/peste-100-de-milioane-de-lei-transferati-prin-instant-payments-mia-in-mai-putin-de-6-saptamani.html" class="main-article">
+                        <img alt="Imagine" src="images/img6.jpg">
+                        <div class="title">
+                            Main title
+                        </div>
+                    </a>
+
+                    <div class="adds">
+                        <div class="add">
+                            Reclama
+                        </div>
+                    </div>
+
+                    
+                    <div class="articles">
+
+                        <a class="article" href="pages/structure.html">
+                            <img alt="Imagine" src="images/img6.jpg">
+                            <div class="title">
+                                Article title
+                            </div>
+                        </a>
+
+                    </div>
+                    
+                </div>
+            </main>
+        </div>
+        <footer>
+            Copyright 2024
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>

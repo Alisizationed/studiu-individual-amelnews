@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kalam:wght@300;400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Rakkas&display=swap');
+
+main{
+    width: 100%;
+    margin: 0;
+    padding-top: 61px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#title {
+    padding: 5px 0;
+    font-family: 'Rakkas';
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#date {
+    font-size: 15px;
+    color: rgb(190, 190, 190);
+    font-style: oblique;
+    padding: 5px 0;
+    text-align: right;
+    font-size: 12px;
+}
+
+main .content p {
+    font-size: 15px;
+}
+
+.articles, .comments {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(100%-20px);
+    float: none;
+}
+
+.articles img, .articles iframe {
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+iframe {
+    width: 100%;
+    height: 200px;
+}
+
+table {
+    width: 100%;
+}
+
+.articles .content {
+    display: block;
+    word-wrap: break-word;
+}
+
+.articles .content p{
+    margin: 0px;
+    padding-bottom: 5px;
+    color: black;
+}
+
+.articles .content p::first-letter {
+    padding-left: 15px;
+}
+
+.comments .name {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: rgb(177, 0, 0);
+    padding-bottom: 20px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.comments .name::before,
+.comments .name::after {
+    flex: 1;
+    content: ' ';
+    padding: .5px;
+    background-color: rgb(100, 100, 100);
+}
+
+
+.comments, .write-a-comment {
+    display: block;
+    width: 100%;
+}
+
+.comment .name {
+    padding-bottom: 20px;
+}
+
+.comment-img {
+    grid-column: 1;
+}
+
+.comment-img img {
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    margin: 4px 0px;
+    border-radius: 2px;
+}
+
+.comment {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40px, 1fr;
+    column-gap: 10px;
+    justify-content: start;
+    padding-bottom: 10px;
+}
+
+.comment-content {
+    grid-column: 2;
+    max-width: calc(100vw - 120px);
+}
+
+.comment .content::first-letter {
+    padding-left: 15px;
+    word-wrap: break-word;
+}
+
+.comment .nickname {
+    color: rgb(177, 0, 0);
+    font-weight: 600;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.comment .content {
+    text-align: justify;
+    color: rgb(86, 86, 86);
+    word-wrap: break-word;
+    font-style: oblique;
+    font-size: 12px;
+}
+
+.write-a-comment {
+    margin: 10px;
+}
+
+.write-a-comment label {
+    padding-left: 10px;
+    color: black;
+    width: 98px;
+}
+
+.write-a-comment textarea {
+    width: calc(100% - 20px);
+    height: 60px;
+}
+
+#CommentBtn {
+    margin: 10px 10px 0px 0px;
+    padding: 2px 15px;
+    color: rgb(177, 0, 0);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+@media (min-width: 680px){
+    main {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    main .content p {
+        font-size: 18px;
+    }
+
+    iframe {
+        height: 400px;
+    }
+
+    .comment-content {
+        max-width: calc(100vw - 180px);
+    }
+
+    #title {
+        font-size: 28px;
+    }
+
+    #date {
+        font-size: 14px;
+    }
+
+    .comment .content {
+        font-size: 15px;
+    }
+
+    .comment .nickname {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 980px){
+    main {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .comment-content {
+        max-width: calc(100vw - 240px);
+    }
+}
