@@ -32,8 +32,8 @@ let incidenteArticles = [
 ];
 
 let economicaArticles = [
-    new Article(true,"https://i.simpalsmedia.com/point.md/news/900x900/5ea9b60028827ab5507c067e9ec67730.jpg","Peste 100 de milioane de lei transferați prin Instant Payments MIA în mai puțin de 6 săptămâni","pages/ro/in-lume/peste-100-de-milioane-de-lei-transferati-prin-instant-payments-mia-in-mai-putin-de-6-saptamani.html"),
-    new Article(false,"https://i.simpalsmedia.com/point.md/news/900x900/f6077c384a4d9a4cd2c493d5aabec36d.jpg","Moldova vrea să revigoreze industria electronică","pages/ro/in-lume/moldova-vrea-sa-revigoreze-industria-electronica.html")
+    new Article(true,"https://i.simpalsmedia.com/point.md/news/900x900/5ea9b60028827ab5507c067e9ec67730.jpg","Peste 100 de milioane de lei transferați prin Instant Payments MIA în mai puțin de 6 săptămâni","pages/ro/economica/peste-100-de-milioane-de-lei-transferati-prin-instant-payments-mia-in-mai-putin-de-6-saptamani.html"),
+    new Article(false,"https://i.simpalsmedia.com/point.md/news/900x900/f6077c384a4d9a4cd2c493d5aabec36d.jpg","Moldova vrea să revigoreze industria electronică","pages/ro/economica/moldova-vrea-sa-revigoreze-industria-electronica.html")
 ];
 
 let Articles = societateArticles.concat(economicaArticles,politicaArticles,incidenteArticles,inLumeArticles);
